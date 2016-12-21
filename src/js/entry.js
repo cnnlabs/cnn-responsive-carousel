@@ -1,7 +1,10 @@
 'use strict';
 // NOTE: this file should only be a bunch of require('');'s for our slider jQuery/JS code'
 // NOTE: we're only loading in the sections of jQuery 3.x that we need.
-var $ = require('jquery/src/core');
+
+require('../css/style.scss');
+
+const $ = require('jquery/src/core');
 require('jquery/src/core/init');
 require('jquery/src/manipulation');
 require('jquery/src/css');
