@@ -1,0 +1,26 @@
+{
+  "name": "cnn-responsive-carousel",
+  "version": "0.0.1",
+  "description": "A responsive, mobile-first, configurable image and video carousel designed with mobile performance in mind.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cnnlabs/cnn-responsive-carousel.git"
+  },
+  "keywords": [
+    "cnnlabs",
+    "webpack",
+    "jquery",
+    "image carousel",
+    "video carousel"
+  ],
+  "author": "Ryan Poplin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cnnlabs/cnn-responsive-carousel/issues"
+  },
+  "homepage": "https://github.com/cnnlabs/cnn-responsive-carousel#readme"
+}
