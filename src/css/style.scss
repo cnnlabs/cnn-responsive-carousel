@@ -1,5 +1,203 @@
-body {
-    h1 {
-        color: green;
-    }
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// cnn-responsive-carousel
+
+#cnn-responsive-carousel {
+  // prevent horizontal scrolling
+  // overflow-x: hidden;
+
+  #img-slider {
+    display: block;
+    margin: 30px auto;
+    height: 400px;
+    min-height: 400px;
+    max-width: 800px;
+    background-color: #f0f0f0;
+    // NOTE: inline-block elements that will be contained in this element will have natural space so we'll want to prevent them from going to a new line
+    white-space: nowrap;
+    // overflow: hidden;
+
+    // simplify
+    .core-img {
+      display: inline-block;
+      // NOTE: an issue with the 'inline-block' CSS standard implementation
+      margin: 0 -3px 0 0;
+      height: 400px;
+      width: 800px;
+      max-width: 800px;
+      background-color: green;
+    }
+
+  }
+
+  #img-thumbnail-slider {
+    display: block;
+    margin: 40px auto;
+    height: 100px;
+    min-height: 100px;
+    max-width: 100px;
+    background-color: black;
+    // NOTE: inline-block elements that will be contained in this element will have natural space so we'll want to prevent them from going to a new line
+    white-space: nowrap;
+    // overflow: hidden;
+
+    // simplify
+    .thumbnail-img {
+      display: inline-block;
+      // NOTE: an issue with the 'inline-block' CSS standard implementation
+      margin: 0 -3px 0 0;
+      height: 100%;
+      width: 100px;
+      max-width: 100px;
+      background-color: red;
+    }
+
+  }
+
+}
+
+// html, body {
+//
+//   overflow-x: hidden;
+//   overflow-y: hidden;
+//   margin: 0;
+//   padding: 0;
+//   font-family: 'Open Sans';
+//
+//   #slider {
+//
+//     position: relative;
+//     overflow: hidden;
+//     margin: 0 auto 0 auto;
+//
+//     a.control_prev, a.control_next {
+//
+//       position: absolute;
+//       top: -webkit-calc(50% - 110px);
+//       top: -moz-calc(50% - 110px);
+//       top: -ms-calc(50% - 110px);
+//       top: calc(50% - 110px);
+//       z-index: 999;
+//       display: block;
+//       padding: 4% 3%;
+//       width: auto;
+//       height: auto;
+//       background: #2a2a2a;
+//       color: #fff;
+//       text-decoration: none;
+//       font-weight: 600;
+//       font-size: 18px;
+//       opacity: 0.8;
+//       cursor: pointer;
+//
+//     }
+//
+//     a.control_prev:hover, a.control_next:hover {
+//
+//       opacity: 1;
+//       -webkit-transition: all 0.2s ease;
+//
+//     }
+//
+//     a.control_prev {
+//
+//       border-radius: 0 2px 2px 0;
+//     }
+//
+//     a.control_next {
+//
+//       right: 0;
+//       border-radius: 2px 0 0 2px;
+//
+//     }
+//
+//     ul {
+//
+//       position: relative;
+//       margin: 0;
+//       padding: 0;
+//       height: 100%;
+//       min-height: 100%;
+//       list-style: none;
+//
+//       li {
+//
+//         text-align: center;
+//         position: relative;
+//         display: block;
+//         float: left;
+//         margin: 0;
+//         padding: 0;
+//         width: 100%;
+//         height: auto;
+//         background: #ccc;
+//         line-height: 300px;
+//
+//         video, img {
+//           margin: 0;
+//           padding: 0;
+//           height: 100%;
+//           max-height: 100%;
+//           width: 100%;
+//
+//         }
+//
+//       }
+//
+//     }
+//
+//   }
+//
+// }

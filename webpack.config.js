@@ -2,7 +2,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 // NOTE: we still need to add minification and uglification to webpack but we can do that before deploying for testing on mobile...
 module.exports = {
-    entry: './src/js/entry.js',
+    entry: './src/js/main.js',
     output: {
         filename: './dist/js/[name].js'
     },
