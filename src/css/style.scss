@@ -56,9 +56,10 @@ div {
 
 #cnn-responsive-carousel {
   // prevent horizontal scrolling
-  // overflow-x: hidden;
+  overflow-x: hidden;
 
   #img-slider {
+    left: 0;
     display: block;
     margin: 30px auto;
     height: 400px;
@@ -71,6 +72,7 @@ div {
 
     // simplify
     .core-img {
+      position: relative;
       display: inline-block;
       // NOTE: an issue with the 'inline-block' CSS standard implementation
       margin: 0 -3px 0 0;
@@ -83,8 +85,10 @@ div {
   }
 
   #img-thumbnail-slider {
+    position: absolute;
+    // overflow-x: hidden;
     display: block;
-    margin: 40px auto;
+    margin: 40px 0 40px 350px;
     height: 100px;
     min-height: 100px;
     max-width: 100px;

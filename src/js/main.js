@@ -5,6 +5,31 @@ require('../css/style.scss');
 const $ = require('jquery');
 
 $(($) => {
+
+    const imgLength = $('.core-img').length;
+    // NOTE: will be dynamic based on responsive size
+    let imgSlide = 800;
+
+    function slide(calculation) {
+        for (let i = 0; i < imgLength; i++) {
+            let slide = $('.core-img')[i];
+            $(slide).animate({
+                left: `${calculation}${imgSlide}`
+            }, 100, () => {
+                console.log($('.core-img').eq(i));
+                $('.core-img').eq(i);
+            });
+        }
+    }
+
+    // for clarity, get this to work dynamically...
+    $('.left-nav-btn').click(() => {
+        slide('-=')
+    });
+    $('.right-nav-btn').click(() => {
+        slide('+=');
+    });
+
     // $('.core-img').css({'margin-left', '-200px'});
     // const coreImageLength = $('.core-img').length;
     // for (let i = 0; i < coreImageLength; i++) {
